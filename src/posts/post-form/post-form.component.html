@@ -1,0 +1,31 @@
+<!-- <h2>Here we have list of my posts:</h2> -->
+<h2>Create a new post:</h2>
+
+<form [formGroup]="postForm" novalidate>
+   <section style="padding: 3%;">
+    <label>
+        Title
+        <input style="background-color: aliceblue; width: 50%;" type="text" formControlName="title">
+    </label>
+    <p *ngIf="showErrors && postForm.get('title').errors?.minlength" style="color: brown">
+        This field must have at least 3 letters.
+    </p>
+   </section>
+   
+    <section>
+        <label>
+            Text
+            <input style="background-color: aliceblue; width: 50%; padding-bottom: 100px;" white class="form" type="text" formControlName="text">
+        </label>
+        <p *ngIf="showErrors && postForm.get('text').errors?.minlength" style="color: brown">
+            This field must have at least 3 letters.
+        </p>
+    </section>
+
+    <section style="padding: 1%;">
+        <button style="background-color: rgb(150, 114, 150); color: white; cursor: pointer" type="button" (click)="save()">Save</button>
+    </section>
+    
+   
+    
+</form>

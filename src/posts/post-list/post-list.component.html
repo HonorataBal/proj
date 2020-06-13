@@ -1,0 +1,26 @@
+<h2>Post's List:</h2>
+
+<section>
+    <form>
+        <input style="background-color: white;" type="text" placeholder="Title" #queryInput>
+        <button style="background-color: rgb(150, 114, 150); color: white; cursor: pointer;" type="button" (click)="search(queryInput.value)">Search!</button>
+    </form>
+</section>
+
+<!-- <section>
+
+    <ul>
+        <wsb-sandwich-item *ngFor="let sandwich of sandwiches | async" [sandwich]="sandwich" (delete)="onDelete($event)"></wsb-sandwich-item>
+       
+    </ul>
+
+</section> -->
+
+<section>
+
+    <ul>
+        <wsb-post-item *ngFor="let post of posts | async" [post]="post" (delete)="onDelete($event)"></wsb-post-item>
+       
+    </ul>
+
+</section>

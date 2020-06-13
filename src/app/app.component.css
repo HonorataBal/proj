@@ -1,0 +1,21 @@
+.ap {
+    background-color: rgb(155, 137, 155);
+    margin: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.app {
+    background-color: rgb(88, 68, 88);
+    color: white;
+    display: inline-block;
+    margin: 4px 10px;
+    cursor: pointer;
+}
+
+.appp {
+    
+    color: rgb(61, 10, 61);
+    font-style: sans-serif;
+}
